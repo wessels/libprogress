@@ -69,7 +69,7 @@ progressTick(uint64_t count)
 		hh = (unsigned int) finished / 3600;
 		mm = ((unsigned int) finished - hh * 3600) / 60;
 		ss = ((unsigned int) finished - hh * 3600 - mm * 60);
-		fprintf(P->out, ", finished in %uh %um %us", hh, mm, ss);
+		fprintf(P->out, ", finished in %u:%02u:%02u", hh, mm, ss);
 	}
 	fprintf(P->out, "\n");
 }
